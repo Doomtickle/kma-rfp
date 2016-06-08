@@ -1,0 +1,61 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 
+  client_name: MyString
+  client_industry: MyString
+  campaign_name: MyString
+  basic_description: MyText
+  flight_date_start: 2016-06-07
+  flight_date_end: 2016-06-07
+  staggered: MyString
+  goals_and_objectives: MyText
+  budget: 1.5
+  targeting1: MyString
+  targeting2: MyString
+  targeting3: MyString
+  targeting4: MyString
+  geography: MyString
+  age_group: MyString
+  gender: MyString
+  household_income: MyString
+  interests: MyText
+  devices: MyText
+  creative_ad_units: MyText
+  day_parting: MyText
+  success_metrics: MyString
+  specifications: MyText
+  insertion_order_terms: MyText
+  proposal_due_dates: 2016-06-07
+  decision_made_by: 2016-06-07
+  selection_criteria: MyText
+
+two:
+  user_id: 
+  client_name: MyString
+  client_industry: MyString
+  campaign_name: MyString
+  basic_description: MyText
+  flight_date_start: 2016-06-07
+  flight_date_end: 2016-06-07
+  staggered: MyString
+  goals_and_objectives: MyText
+  budget: 1.5
+  targeting1: MyString
+  targeting2: MyString
+  targeting3: MyString
+  targeting4: MyString
+  geography: MyString
+  age_group: MyString
+  gender: MyString
+  household_income: MyString
+  interests: MyText
+  devices: MyText
+  creative_ad_units: MyText
+  day_parting: MyText
+  success_metrics: MyString
+  specifications: MyText
+  insertion_order_terms: MyText
+  proposal_due_dates: 2016-06-07
+  decision_made_by: 2016-06-07
+  selection_criteria: MyText

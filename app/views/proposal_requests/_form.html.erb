@@ -1,0 +1,138 @@
+<%= form_for(@proposal_request) do |f| %>
+  <% if @proposal_request.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@proposal_request.errors.count, "error") %> prohibited this proposal_request from being saved:</h2>
+
+      <ul>
+      <% @proposal_request.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="boxyborder">
+      <div class="container">
+          <form>
+              <div class="form-group">
+                  <div class="field col-md-3">
+                    <%= f.label :user_id %><br>
+                    <%= f.text_field :user_id, class: "form-control" %>
+                  </div>
+                  <div class="field col-md-3">
+                    <%= f.label :client_name %><br>
+                    <%= f.text_field :client_name, class: "form-control" %>
+                  </div>
+                  <div class="field col-md-3">
+                    <%= f.label :client_industry %><br>
+                    <%= f.text_field :client_industry, class: "form-control" %>
+                  </div>
+                  <div class="field col-md-3">
+                    <%= f.label :campaign_name %><br>
+                    <%= f.text_field :campaign_name, class: "form-control" %>
+                  </div>
+                  <div class="field">
+                    <%= f.label :basic_description %><br>
+                    <%= f.text_area :basic_description, class: "form-control" %>
+                  </div>
+              </div>
+          </div>
+          <div class="container">
+              <div class="field col-md-5">
+                <%= f.label :flight_date_start %><br>
+                <%= f.date_select :flight_date_start, class: "form-control" %>
+              </div>
+              <div class="field col-md-5">
+                <%= f.label :flight_date_end %><br>
+                <%= f.date_select :flight_date_end, class: "form-control" %>
+              </div>
+              <div class="field col-md-2">
+                <%= f.label :staggered %><br>
+                <%= f.text_field :staggered, class: "form-control" %>
+              </div>
+          </div>
+          <div class="field">
+            <%= f.label :goals_and_objectives %><br>
+            <%= f.text_area :goals_and_objectives, class: "form-control" %>
+          </div>
+          <div class="field">
+            <%= f.label :budget %><br>
+            <%= f.text_field :budget, class: "form-control" %>
+          </div>
+          <div class="field">
+            <%= f.label :targeting1 %><br>
+            <%= f.text_field :targeting1, class: "form-control" %>
+          </div>
+          <div class="field">
+            <%= f.label :targeting2 %><br>
+            <%= f.text_field :targeting2, class: "form-control" %>
+          </div>
+          <div class="field">
+            <%= f.label :targeting3 %><br>
+            <%= f.text_field :targeting3, class: "form-control" %>
+          </div>
+          <div class="field">
+            <%= f.label :targeting4 %><br>
+            <%= f.text_field :targeting4, class: "form-control" %>
+          </div>
+          <div class="field">
+            <%= f.label :geography %><br>
+            <%= f.text_field :geography, class: "form-control" %>
+          </div>
+          <div class="field">
+            <%= f.label :age_group %><br>
+            <%= f.text_field :age_group, class: "form-control" %>
+          </div>
+          <div class="field">
+            <%= f.label :gender %><br>
+            <%= f.text_field :gender, class: "form-control" %>
+          </div>
+          <div class="field">
+            <%= f.label :household_income %><br>
+            <%= f.text_field :household_income, class: "form-control" %>
+          </div>
+          <div class="field">
+            <%= f.label :interests %><br>
+            <%= f.text_area :interests, class: "form-control" %>
+          </div>
+          <div class="field">
+            <%= f.label :devices %><br>
+            <%= f.text_area :devices, class: "form-control" %>
+          </div>
+          <div class="field">
+            <%= f.label :creative_ad_units %><br>
+            <%= f.text_area :creative_ad_units, class: "form-control" %>
+          </div>
+          <div class="field">
+            <%= f.label :day_parting %><br>
+            <%= f.text_area :day_parting, class: "form-control" %>
+          </div>
+          <div class="field">
+            <%= f.label :success_metrics %><br>
+            <%= f.text_field :success_metrics, class: "form-control" %>
+          </div>
+          <div class="field">
+            <%= f.label :specifications %><br>
+            <%= f.text_area :specifications, class: "form-control" %>
+          </div>
+          <div class="field">
+            <%= f.label :insertion_order_terms %><br>
+            <%= f.text_area :insertion_order_terms, class: "form-control" %>
+          </div>
+          <div class="field">
+            <%= f.label :proposal_due_dates %><br>
+            <%= f.date_select :proposal_due_dates, class: "form-control" %>
+          </div>
+          <div class="field">
+            <%= f.label :decision_made_by %><br>
+            <%= f.date_select :decision_made_by, class: "form-control" %>
+          </div>
+          <div class="field">
+            <%= f.label :selection_criteria %><br>
+            <%= f.text_area :selection_criteria, class: "form-control" %>
+          </div>
+          <div class="actions">
+            <%= f.submit class:"btn btn-primary" %>
+          </div>
+      </div>
+  </form>
+<% end %>
