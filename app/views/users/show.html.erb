@@ -4,9 +4,9 @@
     <section class="user_info">
       <h1>
         <%= gravatar_for @user %>
-        <%= @user.name %>
-        <%= @user.email %>
-        <%= @user.company_name %>
+        <p><%= @user.name %></p>
+        <p><%= @user.email %></p>
+        <p><%= @user.company_name %></p>
       </h1>
     </section>
     <section class="stats">
