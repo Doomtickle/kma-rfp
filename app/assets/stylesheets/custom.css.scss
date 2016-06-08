@@ -82,8 +82,11 @@ p {
 #watermark{
     left:0;
     right:0;
-    opacity:.1;
+    opacity:.5;
     z-index:-1;
+    position: absolute;
+    max-width:15%;
+    padding-top:0;
 }
 #primary-nav{
     padding-top:70px;
