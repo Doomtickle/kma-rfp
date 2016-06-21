@@ -30,6 +30,12 @@ textarea {
   h1 {
     margin-bottom: 60px;
   }
+.left {
+    text-align: left;
+    }
+}
+.jumbotron p{
+    line-height:1.5em;
 }
 
 
@@ -64,6 +70,10 @@ p {
 }
 .signup-btn a:visited{
     color:#FFF !important;
+}
+ul li{
+    font-size:1.1em;
+    line-height: 1.7em;
 }
 
 /* header */
@@ -130,6 +140,15 @@ footer {
   margin-top: 45px;
   @include box_sizing;
 }
+.home-buttons{
+    width:50%;
+    margin:0 auto;
+        
+    p{
+        display:inline;
+        margin:0 15px;
+    }
+} 
 
 /* sidebar */
 

@@ -18,13 +18,24 @@
   </div>
 <% else %>
   <div class="center jumbotron">
-    <h1>KMA RFP Portal</h1>
+    <h1>KMA Media Purchasing Portal</h1>
     
-    <h2>
-        Please make an account to view or submit proprosals.
-    </h2>
-    
-    <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary signup-btn" %>  
+    <div class="left">
+        <p>Valued KMA Media Partner,</p>
+
+        <p>Our Media Purchasing Portal has been designed with you in mind to facilitate an efficient purchasing process with features including: 
+        <ul>
+            <li>Secure vendor login to your personal account via HTTPS/SSL connection.</li>
+            <li>The assurance that your proposal will be received by KMA.</li>
+            <li>Fast review and reply</li>
+        </ul>
+       </p> 
+    </div>
+    <div class="home-buttons">
+        <p class="button-space"><%= link_to "Log in", login_path, class: "btn btn-lg btn-primary signup-btn" %></p>
+        <p class="button-space">or</p>
+        <p class="button-space"><%= link_to "Sign Up", signup_path, class: "btn btn-lg btn-primary signup-btn" %></p>
+    </div>
   </div>
                
 <% end %>
