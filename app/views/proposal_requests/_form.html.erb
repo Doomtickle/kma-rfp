@@ -54,7 +54,14 @@
     </div>
     <div class="field">
         <%= f.label :targeting1 %><br>
-        <%= f.text_field :targeting1, class: "form-control" %>
+        <%= check_box_tag 'Text', 'text' %>
+        <%= f.label :text%><br>
+        <%= check_box_tag 'Display', 'display' %>
+        <%= f.label :display%><br>
+        <%= check_box_tag 'Video', 'video' %>
+        <%= f.label :video%><br>
+        <%= check_box_tag 'Geo-fencing', 'geofencing' %>
+        <%= f.label :geofencing%>
     </div>
     <div class="field">
         <%= f.label :targeting2 %><br>
