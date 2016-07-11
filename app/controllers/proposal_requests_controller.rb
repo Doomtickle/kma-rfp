@@ -1,4 +1,6 @@
 class ProposalRequestsController < ApplicationController
+  before_action :logged_in_user, only: [:create, :destroy]
+  before_action :correct_user, only: :destroy
   before_action :set_proposal_request, only: [:show, :edit, :update, :destroy]
 
   # GET /proposal_requests
@@ -70,5 +72,10 @@ class ProposalRequestsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def proposal_request_params
       params.require(:proposal_request).permit(:user_id, :client_name, :client_industry, :campaign_name, :basic_description, :flight_date_start, :flight_date_end, :staggered, :goals_and_objectives, :budget, :targeting1, :targeting2, :targeting3, :targeting4, :geography, :age_group, :gender, :household_income, :interests, :devices, :creative_ad_units, :day_parting, :success_metrics, :specifications, :insertion_order_terms, :proposal_due_dates, :decision_made_by, :selection_criteria)
+    end
+
+    def correct_user
+        @proposal_request = current_user.proposal_requests.find_by(id: params[:id])
+        redirect_to root_url if @proposal_request.nil?
     end
 end
