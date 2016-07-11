@@ -26,7 +26,7 @@ class ProposalRequestsController < ApplicationController
   # POST /proposal_requests
   # POST /proposal_requests.json
   def create
-    @proposal_request = ProposalRequest.new(proposal_request_params)
+    @proposal_request = current_user.proposal_request.new(proposal_request_params)
 
     respond_to do |format|
       if @proposal_request.save
