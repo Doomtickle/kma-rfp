@@ -30,7 +30,7 @@ class ProposalRequestsController < ApplicationController
 
       if @proposal_request.save
         flash[:success] =  'Proposal request was successfully created.' 
-        redirect_to ProposalRequest.show 
+        redirect_to @proposal_request 
       else
           redirect_to 'static_pages/home'
       end
