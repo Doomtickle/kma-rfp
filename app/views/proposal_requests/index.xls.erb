@@ -35,7 +35,7 @@
         <Cell><Data ss:Type="String">Decision made by</Data></Cell>
         <Cell><Data ss:Type="String">Selection Criteria</Data></Cell>
       </Row>
-    <% @proposal_requests.each do |proposal_request| %>
+    <% @proposal_request.each do |proposal_request| %>
       <Row>
         <Cell><Data ss:Type="String"><%= proposal_request.client_name %></Data></Cell>
         <Cell><Data ss:Type="String"><%= proposal_request.client_industry%></Data></Cell>
