@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+  xmlns:o="urn:schemas-microsoft-com:office:office"
+  xmlns:x="urn:schemas-microsoft-com:office:excel"
+  xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+  xmlns:html="http://www.w3.org/TR/REC-html40">
+  <Worksheet ss:Name="Sheet1">
+    <Table>
+      <Row>
+        <Cell><Data ss:Type="String">Client Name</Data></Cell>
+        <Cell><Data ss:Type="String">Client Industry</Data></Cell>
+        <Cell><Data ss:Type="String">Campain Name</Data></Cell>
+        <Cell><Data ss:Type="String">Basic Description</Data></Cell>
+        <Cell><Data ss:Type="String">Flight Date Start</Data></Cell>
+        <Cell><Data ss:Type="String">Flight Date End</Data></Cell>
+        <Cell><Data ss:Type="String">Staggered</Data></Cell>
+        <Cell><Data ss:Type="String">Goals and objectives</Data></Cell>
+        <Cell><Data ss:Type="Number">Budget</Data></Cell>
+        <Cell><Data ss:Type="String">Targeting</Data></Cell>
+        <Cell><Data ss:Type="String">Targeting</Data></Cell>
+        <Cell><Data ss:Type="String">Targeting</Data></Cell>
+        <Cell><Data ss:Type="String">Targeting</Data></Cell>
+        <Cell><Data ss:Type="String">Geography</Data></Cell>
+        <Cell><Data ss:Type="String">Age Group</Data></Cell>
+        <Cell><Data ss:Type="String">Gender</Data></Cell>
+        <Cell><Data ss:Type="Number">Household Income</Data></Cell>
+        <Cell><Data ss:Type="String">Interests</Data></Cell>
+        <Cell><Data ss:Type="String">Devices</Data></Cell>
+        <Cell><Data ss:Type="String">Creative Ad units</Data></Cell>
+        <Cell><Data ss:Type="String">Day Parting</Data></Cell>
+        <Cell><Data ss:Type="String">Success Metrics</Data></Cell>
+        <Cell><Data ss:Type="String">Specifications</Data></Cell>
+        <Cell><Data ss:Type="String">Insertion Order Terms</Data></Cell>
+        <Cell><Data ss:Type="String">Proposal due dates</Data></Cell>
+        <Cell><Data ss:Type="String">Decision made by</Data></Cell>
+        <Cell><Data ss:Type="String">Selection Criteria</Data></Cell>
+      </Row>
+    <% @products.each do |proposal_request| %>
+      <Row>
+        <Cell><Data ss:Type="String"><%= proposal_request.client_name %></Data></Cell>
+        <Cell><Data ss:Type="String"><<%= proposal_request.client_industry%></Data></Cell>
+        <Cell><Data ss:Type="String"><<%= proposal_request.campain_name%></Data></Cell>
+        <Cell><Data ss:Type="String"><<%= proposal_request.basic_description%></Data></Cell>
+        <Cell><Data ss:Type="String"><<%= proposal_request.flight_date_start%></Data></Cell>
+        <Cell><Data ss:Type="String"><<%= proposal_request.flight_date_end%></Data></Cell>
+        <Cell><Data ss:Type="String"><<%= proposal_request.staggered%></Data></Cell>
+        <Cell><Data ss:Type="String"><<%= proposal_request.goals_and_objectives%></Data></Cell>
+        <Cell><Data ss:Type="Number"><<%= proposal_request.budget%></Data></Cell>
+        <Cell><Data ss:Type="String"><<%= proposal_request.targeting1%></Data></Cell>
+        <Cell><Data ss:Type="String"><<%= proposal_request.targeting2%></Data></Cell>
+        <Cell><Data ss:Type="String"><<%= proposal_request.targeting3%></Data></Cell>
+        <Cell><Data ss:Type="String"><<%= proposal_request.targeting4%></Data></Cell>
+        <Cell><Data ss:Type="String"><<%= proposal_request.geography%></Data></Cell>
+        <Cell><Data ss:Type="String"><<%= proposal_request.age_group%></Data></Cell>
+        <Cell><Data ss:Type="String"><<%= proposal_request.gender%></Data></Cell>
+        <Cell><Data ss:Type="Number"><<%= proposal_request.household_income%></Data></Cell>
+        <Cell><Data ss:Type="String"><<%= proposal_request.interests%></Data></Cell>
+        <Cell><Data ss:Type="String"><<%= proposal_request.devices%></Data></Cell>
+        <Cell><Data ss:Type="String"><<%= proposal_request.creative_ad_units%></Data></Cell>
+        <Cell><Data ss:Type="String"><<%= proposal_request.day_parting%></Data></Cell>
+        <Cell><Data ss:Type="String"><<%= proposal_request.success_metrics%></Data></Cell>
+        <Cell><Data ss:Type="String"><<%= proposal_request.specifications%></Data></Cell>
+        <Cell><Data ss:Type="String"><<%= proposal_request.insertion_order_terms%></Data></Cell>
+        <Cell><Data ss:Type="String"><<%= proposal_request.proposal_due_dates%></Data></Cell>
+        <Cell><Data ss:Type="String"><<%= proposal_request.decision_made_by%></Data></Cell>
+        <Cell><Data ss:Type="String"><<%= proposal_request.selection_criteria%></Data></Cell>
+      </Row>
+    <% end %>
+    </Table>
+  </Worksheet>
+</Workbook>

@@ -12,6 +12,12 @@ class ProposalRequestsController < ApplicationController
   # GET /proposal_requests/1
   # GET /proposal_requests/1.json
   def show
+      @proposal_requests = ProposalRequest.order(:name)
+      respond_to do |format|
+        format.html
+        format.csv { send_data @proposal_requests.to_csv }
+        format.xls # { send_data @proposal_requests.to_csv(col_sep: "\t") }
+      end
   end
 
   # GET /proposal_requests/new

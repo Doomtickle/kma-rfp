@@ -139,6 +139,10 @@
   <strong>Selection criteria:</strong>
   <%= @proposal_request.selection_criteria %>
 </p>
-
+<p>
+  Download:
+    <%= link_to "CSV", proposal_requests_path(format: "csv") %> | 
+    <%= link_to "Excel", proposal_requests_path(format: "xls") %>
+</p>
 <%= link_to 'Edit', edit_proposal_request_path(@proposal_request) %> |
 <%= link_to 'Back', proposal_requests_path %>
