@@ -26,17 +26,14 @@ class ProposalRequestsController < ApplicationController
   # POST /proposal_requests
   # POST /proposal_requests.json
   def create
-    @proposal_request = current_user.proposal_request.new(proposal_request_params)
+    @proposal_request = current_user.proposal_requests.build(proposal_request_params)
 
-    respond_to do |format|
       if @proposal_request.save
-        format.html { redirect_to @proposal_request, notice: 'Proposal request was successfully created.' }
-        format.json { render :show, status: :created, location: @proposal_request }
+        flash[:success] =  'Proposal request was successfully created.' 
+        redirect_to root_url
       else
-        format.html { render :new }
-        format.json { render json: @proposal_request.errors, status: :unprocessable_entity }
+          redirect_to 'static_pages/home'
       end
-    end
   end
 
   # PATCH/PUT /proposal_requests/1
