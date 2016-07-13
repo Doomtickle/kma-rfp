@@ -15,7 +15,7 @@
         <Cell><Data ss:Type="String">Flight Date End</Data></Cell>
         <Cell><Data ss:Type="String">Staggered</Data></Cell>
         <Cell><Data ss:Type="String">Goals and objectives</Data></Cell>
-        <Cell><Data ss:Type="Number">Budget</Data></Cell>
+        <Cell><Data ss:Type="String">Budget</Data></Cell>
         <Cell><Data ss:Type="String">Targeting</Data></Cell>
         <Cell><Data ss:Type="String">Targeting</Data></Cell>
         <Cell><Data ss:Type="String">Targeting</Data></Cell>
@@ -35,7 +35,6 @@
         <Cell><Data ss:Type="String">Decision made by</Data></Cell>
         <Cell><Data ss:Type="String">Selection Criteria</Data></Cell>
       </Row>
-         <% @proposal_requests.each do |proposal_request| %>
       <Row>
         <Cell><Data ss:Type="String"><%= proposal_request.client_name %></Data></Cell>
         <Cell><Data ss:Type="String"><%= proposal_request.client_industry%></Data></Cell>
@@ -45,7 +44,7 @@
         <Cell><Data ss:Type="String"><%= proposal_request.flight_date_end%></Data></Cell>
         <Cell><Data ss:Type="String"><%= proposal_request.staggered%></Data></Cell>
         <Cell><Data ss:Type="String"><%= proposal_request.goals_and_objectives%></Data></Cell>
-        <Cell><Data ss:Type="Number"><%= proposal_request.budget%></Data></Cell>
+        <Cell><Data ss:Type="String"><%= proposal_request.budget%></Data></Cell>
         <Cell><Data ss:Type="String"><%= proposal_request.targeting1%></Data></Cell>
         <Cell><Data ss:Type="String"><%= proposal_request.targeting2%></Data></Cell>
         <Cell><Data ss:Type="String"><%= proposal_request.targeting3%></Data></Cell>
@@ -53,7 +52,7 @@
         <Cell><Data ss:Type="String"><%= proposal_request.geography%></Data></Cell>
         <Cell><Data ss:Type="String"><%= proposal_request.age_group%></Data></Cell>
         <Cell><Data ss:Type="String"><%= proposal_request.gender%></Data></Cell>
-        <Cell><Data ss:Type="Number"><%= proposal_request.household_income%></Data></Cell>
+        <Cell><Data ss:Type="String"><%= proposal_request.household_income%></Data></Cell>
         <Cell><Data ss:Type="String"><%= proposal_request.interests%></Data></Cell>
         <Cell><Data ss:Type="String"><%= proposal_request.devices%></Data></Cell>
         <Cell><Data ss:Type="String"><%= proposal_request.creative_ad_units%></Data></Cell>
@@ -65,7 +64,6 @@
         <Cell><Data ss:Type="String"><%= proposal_request.decision_made_by%></Data></Cell>
         <Cell><Data ss:Type="String"><%= proposal_request.selection_criteria%></Data></Cell>
       </Row>
-        <% end %>
     </Table>
   </Worksheet>
 </Workbook>
