@@ -1,3 +1,0 @@
-ProposalRequest.to_xlsx package: xlsx_package
-xlsx_package.workbook.worksheets.first.tap do |sheet|
-end
