@@ -10,7 +10,7 @@ class CreateProposalRequests < ActiveRecord::Migration
       t.string :staggered
       t.text :goals_and_objectives
       t.float :budget
-      t.string :targeting
+      t.string :targeting1
       t.string :geography
       t.string :age_group
       t.string :gender
