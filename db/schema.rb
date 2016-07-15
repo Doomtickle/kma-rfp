@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160608153038) do
+ActiveRecord::Schema.define(version: 20141111214811) do
 
   create_table "microposts", force: :cascade do |t|
     t.text     "content"
@@ -23,42 +23,6 @@ ActiveRecord::Schema.define(version: 20160608153038) do
 
   add_index "microposts", ["user_id", "created_at"], name: "index_microposts_on_user_id_and_created_at"
   add_index "microposts", ["user_id"], name: "index_microposts_on_user_id"
-
-  create_table "proposal_requests", force: :cascade do |t|
-    t.integer  "user_id"
-    t.string   "client_name"
-    t.string   "client_industry"
-    t.string   "campaign_name"
-    t.text     "basic_description"
-    t.date     "flight_date_start"
-    t.date     "flight_date_end"
-    t.string   "staggered"
-    t.text     "goals_and_objectives"
-    t.float    "budget"
-    t.string   "targeting1"
-    t.string   "targeting2"
-    t.string   "targeting3"
-    t.string   "targeting4"
-    t.string   "geography"
-    t.string   "age_group"
-    t.string   "gender"
-    t.string   "household_income"
-    t.text     "interests"
-    t.text     "devices"
-    t.text     "creative_ad_units"
-    t.text     "day_parting"
-    t.string   "success_metrics"
-    t.text     "specifications"
-    t.text     "insertion_order_terms"
-    t.date     "proposal_due_dates"
-    t.date     "decision_made_by"
-    t.text     "selection_criteria"
-    t.datetime "created_at",            null: false
-    t.datetime "updated_at",            null: false
-  end
-
-  add_index "proposal_requests", ["user_id", "created_at"], name: "index_proposal_requests_on_user_id_and_created_at"
-  add_index "proposal_requests", ["user_id"], name: "index_proposal_requests_on_user_id"
 
   create_table "relationships", force: :cascade do |t|
     t.integer  "follower_id"
@@ -84,7 +48,6 @@ ActiveRecord::Schema.define(version: 20160608153038) do
     t.datetime "activated_at"
     t.string   "reset_digest"
     t.datetime "reset_sent_at"
-    t.string   "company_name"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
