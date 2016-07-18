@@ -17,7 +17,7 @@ class CreateProposalRequests < ActiveRecord::Migration
       t.string :household_income
       t.string :interests
       t.string :devices
-      t.string :device_description
+      t.string :d_description
       t.text :creative_ad_units
       t.string :day_parting
       t.string :day_parting_description
