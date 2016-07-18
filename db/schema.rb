@@ -41,7 +41,7 @@ ActiveRecord::Schema.define(version: 20160715155550) do
     t.string   "household_income"
     t.string   "interests"
     t.string   "devices"
-    t.string   "d_description"
+    t.string   "devices_description"
     t.text     "creative_ad_units"
     t.string   "day_parting"
     t.string   "day_parting_description"
