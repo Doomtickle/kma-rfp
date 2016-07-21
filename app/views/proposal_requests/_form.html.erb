@@ -14,7 +14,7 @@
         <div class="row">
             <%= f.input :flightDateStart, label: "Flight Date Start",  wrapper_html: { class: 'col-sm-5' } %>
             <%= f.input :flightDateEnd, label: "Flight Date End",  wrapper_html: { class: 'col-sm-5' } %>
-            <%= f.input :staggered, label: "Staggered?",  wrapper_html: { class: 'col-sm-2' } %>
+            <%= f.input :staggered, label: "Staggered?", as: :boolean,  wrapper_html: { class: 'col-sm-2' } %>
         </div>
     </fieldset>
     <fieldset class="form-group">

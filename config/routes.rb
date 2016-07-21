@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get    'contact'             => 'static_pages#contact'
   get    'signup'              => 'users#new'
   get    'login'               => 'sessions#new'
-  patch    'new-proposal'        => 'proposal_requests#new'
+  get    'new-proposal'        => 'proposal_requests#new'
   post   'login'               => 'sessions#create'
   delete 'logout'              => 'sessions#destroy'
   resources :users do
