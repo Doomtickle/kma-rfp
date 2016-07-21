@@ -1,0 +1,75 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Proposal Requests</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Clientname</th>
+      <th>Clientindustry</th>
+      <th>Campaignname</th>
+      <th>Basicdescription</th>
+      <th>Flightdatestart</th>
+      <th>Flightdateend</th>
+      <th>Staggered</th>
+      <th>Goalsandobjectives</th>
+      <th>Budget</th>
+      <th>Targeting</th>
+      <th>Geography</th>
+      <th>Agegroup</th>
+      <th>Gender</th>
+      <th>Househouldincome</th>
+      <th>Interest</th>
+      <th>Device</th>
+      <th>Creativeadunits</th>
+      <th>Dayparting</th>
+      <th>Successmetrics</th>
+      <th>Specification</th>
+      <th>Insertionorderterms</th>
+      <th>Submissioninstructions</th>
+      <th>Proposaldue</th>
+      <th>Decisionmadeby</th>
+      <th>Selectioncriteria</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @proposal_requests.each do |proposal_request| %>
+      <tr>
+        <td><%= proposal_request.clientName %></td>
+        <td><%= proposal_request.clientIndustry %></td>
+        <td><%= proposal_request.campaignName %></td>
+        <td><%= proposal_request.basicDescription %></td>
+        <td><%= proposal_request.flightDateStart %></td>
+        <td><%= proposal_request.flightDateEnd %></td>
+        <td><%= proposal_request.staggered %></td>
+        <td><%= proposal_request.goalsAndObjectives %></td>
+        <td><%= proposal_request.budget %></td>
+        <td><%= proposal_request.targeting %></td>
+        <td><%= proposal_request.geography %></td>
+        <td><%= proposal_request.ageGroup %></td>
+        <td><%= proposal_request.gender %></td>
+        <td><%= proposal_request.househouldIncome %></td>
+        <td><%= proposal_request.interest %></td>
+        <td><%= proposal_request.device %></td>
+        <td><%= proposal_request.creativeAdUnits %></td>
+        <td><%= proposal_request.dayParting %></td>
+        <td><%= proposal_request.successMetrics %></td>
+        <td><%= proposal_request.specification %></td>
+        <td><%= proposal_request.insertionOrderTerms %></td>
+        <td><%= proposal_request.submissionInstructions %></td>
+        <td><%= proposal_request.proposalDue %></td>
+        <td><%= proposal_request.decisionMadeBy %></td>
+        <td><%= proposal_request.selectionCriteria %></td>
+        <td><%= link_to 'Show', proposal_request %></td>
+        <td><%= link_to 'Edit', edit_proposal_request_path(proposal_request) %></td>
+        <td><%= link_to 'Destroy', proposal_request, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Proposal request', new_proposal_request_path %>

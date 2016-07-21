@@ -1,0 +1,55 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  clientName: MyString
+  clientIndustry: MyString
+  campaignName: MyString
+  basicDescription: MyText
+  flightDateStart: 2016-07-21
+  flightDateEnd: 2016-07-21
+  staggered: MyString
+  goalsAndObjectives: MyText
+  budget: 1.5
+  targeting: MyString
+  geography: MyString
+  ageGroup: MyString
+  gender: MyString
+  househouldIncome: MyString
+  interest: MyString
+  device: MyString
+  creativeAdUnits: MyText
+  dayParting: MyString
+  successMetrics: MyString
+  specification: MyText
+  insertionOrderTerms: MyText
+  submissionInstructions: MyText
+  proposalDue: 2016-07-21
+  decisionMadeBy: 2016-07-21
+  selectionCriteria: MyText
+
+two:
+  clientName: MyString
+  clientIndustry: MyString
+  campaignName: MyString
+  basicDescription: MyText
+  flightDateStart: 2016-07-21
+  flightDateEnd: 2016-07-21
+  staggered: MyString
+  goalsAndObjectives: MyText
+  budget: 1.5
+  targeting: MyString
+  geography: MyString
+  ageGroup: MyString
+  gender: MyString
+  househouldIncome: MyString
+  interest: MyString
+  device: MyString
+  creativeAdUnits: MyText
+  dayParting: MyString
+  successMetrics: MyString
+  specification: MyText
+  insertionOrderTerms: MyText
+  submissionInstructions: MyText
+  proposalDue: 2016-07-21
+  decisionMadeBy: 2016-07-21
+  selectionCriteria: MyText

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160715155550) do
+ActiveRecord::Schema.define(version: 20160721180939) do
 
   create_table "microposts", force: :cascade do |t|
     t.text     "content"
@@ -23,6 +23,36 @@ ActiveRecord::Schema.define(version: 20160715155550) do
 
   add_index "microposts", ["user_id", "created_at"], name: "index_microposts_on_user_id_and_created_at"
   add_index "microposts", ["user_id"], name: "index_microposts_on_user_id"
+
+  create_table "proposal_requests", force: :cascade do |t|
+    t.string   "clientName"
+    t.string   "clientIndustry"
+    t.string   "campaignName"
+    t.text     "basicDescription"
+    t.date     "flightDateStart"
+    t.date     "flightDateEnd"
+    t.string   "staggered"
+    t.text     "goalsAndObjectives"
+    t.float    "budget"
+    t.string   "targeting"
+    t.string   "geography"
+    t.string   "ageGroup"
+    t.string   "gender"
+    t.string   "househouldIncome"
+    t.string   "interest"
+    t.string   "device"
+    t.text     "creativeAdUnits"
+    t.string   "dayParting"
+    t.string   "successMetrics"
+    t.text     "specification"
+    t.text     "insertionOrderTerms"
+    t.text     "submissionInstructions"
+    t.date     "proposalDue"
+    t.date     "decisionMadeBy"
+    t.text     "selectionCriteria"
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
 
   create_table "relationships", force: :cascade do |t|
     t.integer  "follower_id"
