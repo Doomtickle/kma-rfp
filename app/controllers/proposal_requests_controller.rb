@@ -19,6 +19,7 @@ class ProposalRequestsController < ApplicationController
 
   # GET /proposal_requests/1/edit
   def edit
+      @proposal_request = ProposalRequest.find(params[:id])
   end
 
   # POST /proposal_requests
