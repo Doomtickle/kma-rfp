@@ -157,6 +157,25 @@ ul li{
 #primary-nav{
     padding-top:70px;
 }
+.navbar-inverse{
+	background-color: #17345C;
+	border:none;
+}
+.navbar-nav li a {
+	color: #FFF !important;
+}
+
+/* MID */
+
+.btn-primary {
+    color: #fff;
+    background-color: #17345C;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #428bca;
+}
+
 /* footer */
 
 footer {
