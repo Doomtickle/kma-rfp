@@ -117,10 +117,13 @@ p {
   font-size: 1.1em;
   line-height: 1.7em;
 }
+.signup-btn{
+	width: 25%;
+}
 .signup-btn a{
     color:#FFF !important;
 }
-.signup-btn a:visited{
+.signup-btn:visited{
     color:#FFF !important;
 }
 ul li{
@@ -164,6 +167,9 @@ ul li{
 .navbar-nav li a {
 	color: #FFF !important;
 }
+.navbar-nav li a:hover{
+	color: #faa41a;
+}
 
 /* MID */
 
@@ -177,16 +183,29 @@ ul li{
 }
 
 /* footer */
+#watermark {
+    z-index: 10;
+	padding-top: 15px;
+}
 
 footer {
   margin-top: 45px;
   padding-top: 5px;
+  padding-left: 40px;
+  padding-right: 40px;
   border-top: 1px solid $gray-medium-light;
   color: $gray-light;
+  background-color: #17345C;
+  height: 150px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  
   a {
     color: $gray;
     &:hover {
-      color: $gray-darker;
+      color: #428bca;
     }
   }
   small {
@@ -200,6 +219,9 @@ footer {
       margin-left: 15px;
     }
   }
+}
+footer nav li a {
+    color: #FFF;
 }
 
 /* miscellaneous */
