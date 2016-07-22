@@ -17,7 +17,7 @@ module KMARFP
     # config.time_zone = 'Central Time (US & Canada)'
 
     # Font path
-    config.assets.paths << Rails.root.join('lib', 'assets', 'fonts')
+    config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
     config.assets.precompile += %w(.svg .eot .woff .ttf)
 
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
