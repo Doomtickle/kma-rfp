@@ -12,6 +12,38 @@ $gray-medium-light: #eaeaea;
 }
 
 /* universal */
+/*FONTS*/
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url(/assets/fonts/bebasneue-webfont.woff) format("woff");
+}
+@font-face {
+  font-family: "Bebas Neue Bold";
+  src: url(/assets/fonts/bebasneue_bold-webfont.woff) format("woff");
+}
+@font-face {
+  font-family: "James Fajardo";
+  src: url(/assets/fonts/james_fajardo-webfont.woff) format("woff");
+}
+@font-face {
+  font-family: "Volkorn Bold Italic";
+  src: url(/assets/fonts/vollkorn-bolditalic-webfont.woff) format("woff");
+}
+@font-face {
+  font-family: "Volkorn Bold";
+  src: url(/assets/fonts/vollkorn-bold-webfont.woff) format("woff");
+}
+@font-face {
+  font-family: "Volkorn Italic";
+  src: url(/assets/fonts/vollkorn-italic-webfont.woff) format("woff");
+}
+@font-face {
+  font-family: "Volkorn Regular";
+  src: url(/assets/fonts/vollkorn-regular-webfont.woff) format("woff");
+}
+
+/*END FONTS*/
 
 body {
   padding-top: 200px;
