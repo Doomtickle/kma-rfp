@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  rfp_amount: 1.5
+  purchased_60: 1
+  purchased_30: 1
+  cpps: 1.5
+  bonus: MyText
+  user_id: 
+
+two:
+  rfp_amount: 1.5
+  purchased_60: 1
+  purchased_30: 1
+  cpps: 1.5
+  bonus: MyText
+  user_id: 

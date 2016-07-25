@@ -1,0 +1,16 @@
+<%= simple_form_for(@proposal) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :rfp_amount %>
+    <%= f.input :purchased_60 %>
+    <%= f.input :purchased_30 %>
+    <%= f.input :cpps %>
+    <%= f.input :bonus %>
+    <%= f.association :user %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

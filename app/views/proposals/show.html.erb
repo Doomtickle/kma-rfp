@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Rfp amount:</strong>
+  <%= @proposal.rfp_amount %>
+</p>
+
+<p>
+  <strong>Purchased 60:</strong>
+  <%= @proposal.purchased_60 %>
+</p>
+
+<p>
+  <strong>Purchased 30:</strong>
+  <%= @proposal.purchased_30 %>
+</p>
+
+<p>
+  <strong>Cpps:</strong>
+  <%= @proposal.cpps %>
+</p>
+
+<p>
+  <strong>Bonus:</strong>
+  <%= @proposal.bonus %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @proposal.user %>
+</p>
+
+<%= link_to 'Edit', edit_proposal_path(@proposal) %> |
+<%= link_to 'Back', proposals_path %>

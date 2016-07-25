@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :proposals
   resources :proposal_requests
   root                'static_pages#home'
   get    'help'                => 'static_pages#help'

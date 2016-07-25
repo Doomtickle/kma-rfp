@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160721180939) do
+ActiveRecord::Schema.define(version: 20160725213820) do
 
   create_table "microposts", force: :cascade do |t|
     t.text     "content"
@@ -53,6 +53,20 @@ ActiveRecord::Schema.define(version: 20160721180939) do
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
   end
+
+  create_table "proposals", force: :cascade do |t|
+    t.float    "rfp_amount"
+    t.integer  "purchased_60"
+    t.integer  "purchased_30"
+    t.float    "cpps"
+    t.text     "bonus"
+    t.integer  "user_id"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
+  add_index "proposals", ["user_id", "created_at"], name: "index_proposals_on_user_id_and_created_at"
+  add_index "proposals", ["user_id"], name: "index_proposals_on_user_id"
 
   create_table "relationships", force: :cascade do |t|
     t.integer  "follower_id"
