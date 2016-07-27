@@ -1,42 +1,25 @@
-# Ruby on Rails Tutorial: sample application
+#KMA Media Purchasing portal 
 
-This is the sample application for the
-[*Ruby on Rails Tutorial:
-Learn Web Development with Rails*](http://www.railstutorial.org/)
-by [Michael Hartl](http://www.michaelhartl.com/). You can use this reference implementation to help track down errors if you end up having trouble with code in the tutorial. In particular, as a first debugging check I suggest getting the test suite to pass on your local machine:
+This program needs to do the following:
 
-```
-$ cd ~/workspace
-$ git clone https://github.com/mhartl/sample_app_3rd_edition.git
-$ cd sample_app_3rd_edition
-$ bundle install --without production
-$ bundle exec rake db:migrate
-$ bundle exec rake test
-```
+1. Allow users to create an account and log in (Done)
+2. Assign a role of admin of admin or user (Done)
+3. Admins should be able to create a Proposal Request
+4. Proposal Request link would be emailed to specific users
+5. Users would then log in and submit a proposal form and upload any extra files
+   5a. Proposals should belong to the specific user that submitted it
+6. Admins should be notified by email when a user submits a proposal
+7. Admins can log in and view the Proposals that belong to a specific Proposal request
+8. Users should be notified by email whether their proposal was accepted or rejected by an admin.
 
-The repository also has chapter-specific branches with the state of the code at the end of each chapter. You can view them as follows:
+Notes:
+1. I've got most of the forms built, but I'm having trouble bringing it all together.
+2. Don't worry about styles or CSS.  I can handle that once functionality is complete.
+3. I've uploaded examples spreadsheets of the complete Proposal Request Form and the forms we need the user to fill out. You can view them at the following links:
+    Proposal Request: https://drive.google.com/open?id=0B2bUMpqlvRr-RDJkUzFjNnF0OTg
+    Proposal: https://docs.google.com/spreadsheets/d/1jjZM8DKqs-lrBtkk6erSW_aXTec4Eksvx_G7Xx_WBb4/edit?usp=sharing 
 
-```
-$ git branch --all
-  .
-  .
-  .
-  remotes/origin/account-activation-password-reset
-  remotes/origin/filling-in-layout
-  remotes/origin/following-users
-  remotes/origin/log-in-log-out
-  remotes/origin/master
-  remotes/origin/modeling-users
-  remotes/origin/sign-up
-  remotes/origin/static-pages
-  remotes/origin/updating-users
-  remotes/origin/user-microposts
-```
+4. We don't need the following, followers, or microposts sections.  I just copied that from the ruby tutorial online.  We can take those out.  
 
-To check out one of these chapter-specific branches, just use `git checkout` followed by the name without `remotes/origin/`:
-
-```
-$ git checkout log-in-log-out
-```
-
-This should help you track down any discrepancies between your code and the code in the tutorial.
+5. This is also already on heroku at  https://rfp.kerigan.com
+    Once negotiated, I can give you access so that you can push directly to heroku.
