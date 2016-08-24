@@ -8,7 +8,6 @@ Rails.application.routes.draw do
   get    'signup'              => 'users#new'
   get    'login'               => 'sessions#new'
   get    'new-proposal'        => 'proposal_requests#new'
-  get    'proposal'            => 'proposals#new'
   post   'login'               => 'sessions#create'
   delete 'logout'              => 'sessions#destroy'
   resources :users do
