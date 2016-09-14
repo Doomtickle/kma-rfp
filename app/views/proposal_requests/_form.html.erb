@@ -25,7 +25,6 @@
     </fieldset>
     <fieldset clss="form-group">
         <div class="row">
-            <%= f.input :targeting, :collection ["Text", "Display", "Video", "Geo-Fencing"], :as => :check_boxes, wrapper_html: { class: 'col-sm-8' } %>
             <%= f.input :geography, wrapper_html: { class: 'col-sm-3' } %>
             <%= f.input :ageGroup, label: "Age Group",  wrapper_html: { class: 'col-sm-3' } %>
             <%= f.input :gender, wrapper_html: { class: 'col-sm-3' } %>
